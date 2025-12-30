@@ -9,55 +9,93 @@
 </head>
 
 <body>
-  <main class="app">
-
-    <div class="app-name-bar">Chatify</div>
+  <div class="app">
+    <header class="top-bar">
+      <span class="app-name">Chatify</span>
+    </header>
 
     <section class="chat">
 
-      <header class="chat__header">
+    
+      <header class="chat-header">
         <div class="avatar"></div>
-        <div class="chat__title">
-          <span class="chat__name">Ananya</span>
-          <span class="chat__status">Online</span>
+        <div class="chat-info">
+          <div class="name">Ananya</div>
+          <div class="status">online</div>
         </div>
       </header>
 
-      <div class="chat__body">
-        <div class="messages">
+      <div class="chat-body">
 
-          <div class="day-divider">Today</div>
+        <div class="day">Yesterday</div>
 
-          <div class="msg msg--out">
-            <div class="bubble">
-              Hi Ananya 👋 How was your day?
-              <div class="bubble__meta">6:20 PM • Seen</div>
-            </div>
-            <div class="msg__avatar"></div>
+        <div class="message in">
+          <div class="avatar small"></div>
+          <div class="bubble">
+            Hey Yashvanth! Do you remember our very first day in college? 😄
+            <div class="meta">5:10 PM</div>
           </div>
-
-          <div class="msg msg--in">
-            <div class="msg__avatar"></div>
-            <div class="bubble typing-bubble">
-              <div class="typing">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </div>
-          </div>
-
         </div>
+
+        <div class="message out">
+          <div class="bubble">
+            Of course, Ananya! You got lost trying to find the classroom and I had to guide you 😂
+            <div class="meta">5:11 PM ✓✓</div>
+          </div>
+        </div>
+
+        <div class="message in">
+          <div class="avatar small"></div>
+          <div class="bubble">
+            Haha yes! And you spilled coffee on your notebook during orientation. Classic Yashvanth moment!
+            <div class="meta">5:12 PM</div>
+          </div>
+        </div>
+
+        <div class="message out">
+          <div class="bubble">
+            Don’t remind me 😅 But remember how we all sneaked out to the canteen during the boring lecture?
+            <div class="meta">5:13 PM ✓✓</div>
+          </div>
+        </div>
+
+        <div class="message in">
+          <div class="avatar small"></div>
+          <div class="bubble">
+            Oh yes! That samosa party was legendary. We laughed so much that day.
+            <div class="meta">5:14 PM</div>
+          </div>
+        </div>
+
+        <div class="message out">
+          <div class="bubble">
+            And the fresher’s event… you danced on stage and the whole crowd cheered. You were the star 🌟
+            <div class="meta">5:15 PM ✓✓</div>
+          </div>
+        </div>
+
+        <div class="message in">
+          <div class="avatar small"></div>
+          <div class="bubble">
+            Haha stop teasing! But honestly, those first weeks were the most fun. College felt like a new world.
+            <div class="meta">5:16 PM</div>
+          </div>
+        </div>
+
+        <div class="message out">
+          <div class="bubble">
+            True! Those memories still make me smile. Glad we shared them together 🤗
+            <div class="meta">5:17 PM ✓✓</div>
+          </div>
+        </div>
+
       </div>
-
-      <footer class="chat__input">
-        <div class="composer">
-          <input class="composer__input" type="text" placeholder="Message Ananya..." />
-          <button class="send-btn">Send</button>
-        </div>
+      <footer class="chat-input">
+        <input type="text" placeholder="Type a message">
+        <button>Send</button>
       </footer>
 
     </section>
-  </main>
+  </div>
 </body>
 </html>
