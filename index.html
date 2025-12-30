@@ -2,78 +2,124 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>College Chat UI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pingora — Chat App</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <main class="app">
-    <section class="chat">
+    <section class="chat" aria-label="Pingora chat application">
 
       <header class="chat__header">
-        <div class="avatar girl"></div>
-        <div>
-          <div class="chat__name">Ananya</div>
-          <div class="chat__status">
-            <span class="dot"></span> Online
-          </div>
+        <div class="avatar"></div>
+
+        <div class="chat__title">
+          <span class="chat__name">Ananya</span>
+          <span class="chat__status">
+            <span class="status-dot"></span>
+            Online • Typing…
+          </span>
+        </div>
+
+        <div class="chat__actions">
+          <button class="icon-btn" aria-label="Search">
+            <span class="i i--search"></span>
+          </button>
+          <button class="icon-btn" aria-label="Voice call">
+            <span class="i i--phone"></span>
+          </button>
+          <button class="icon-btn" aria-label="Video call">
+            <span class="i i--video"></span>
+          </button>
         </div>
       </header>
 
       <div class="chat__body">
+        <div class="messages">
+          <div class="day-divider">Today</div>
 
-        <div class="day-divider">Today</div>
-
-        <div class="msg in">
-          <div class="avatar girl small"></div>
-          <div class="bubble">
-            Do you remember our first day of college? I was honestly so nervous 😅
-            <div class="time">9:10 AM</div>
+          <div class="msg msg--in">
+            <div class="msg__avatar"></div>
+            <div class="bubble">
+              Morning Yashvanth 😄 Did you finish the UI assignment?
+              <div class="bubble__meta">
+                <span>9:45 AM</span>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="msg out">
-          <div class="bubble">
-            <strong>Yashvanth Kanna:</strong> Same here 😂 I couldn’t even find the classroom properly.
-            <div class="time seen">9:12 AM • Seen</div>
+          <div class="msg msg--out">
+            <div class="bubble">
+              Almost! I redesigned it as a full chat app. Clean HTML + CSS only.
+              <div class="bubble__meta">
+                <span>9:47 AM</span>
+                <span class="seen">Seen</span>
+              </div>
+            </div>
+            <div class="msg__avatar"></div>
           </div>
-          <div class="avatar boy small"></div>
-        </div>
 
-        <div class="msg in">
-          <div class="avatar girl small"></div>
-          <div class="bubble">
-            Long lectures, short breaks, but those lunch-time talks were the best.
-            <div class="time">9:14 AM</div>
+          <div class="msg msg--in">
+            <div class="msg__avatar"></div>
+            <div class="bubble">
+              Nice 👌 Are you adding dark mode also?
+              <div class="bubble__meta">
+                <span>9:48 AM</span>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="msg out">
-          <div class="bubble">
-            <strong>Yashvanth Kanna:</strong> True 💯 Canteen food, assignments, and last-minute exam prep—memorable days.
-            <div class="time delivered">9:16 AM • Delivered</div>
+          <div class="msg msg--out">
+            <div class="bubble">
+              Yes, using prefers-color-scheme. No JavaScript at all.
+              <div class="bubble__meta">
+                <span>9:49 AM</span>
+                <span class="seen">Delivered</span>
+              </div>
+            </div>
+            <div class="msg__avatar"></div>
           </div>
-          <div class="avatar boy small"></div>
-        </div>
 
-        <div class="msg in">
-          <div class="avatar girl small"></div>
-          <div class="bubble">
-            College life was stressful, but I’d relive it again without thinking 💙
-            <div class="time">9:18 AM</div>
+          <div class="msg msg--in">
+            <div class="msg__avatar"></div>
+            <div class="bubble">
+              That’s smart. This will look great in your portfolio.
+              <div class="bubble__meta">
+                <span>9:50 AM</span>
+              </div>
+            </div>
           </div>
-        </div>
 
+        </div>
       </div>
 
       <footer class="chat__input">
-        <input type="text" placeholder="Message">
-        <button>Send</button>
+        <div class="composer">
+          <button class="composer__btn" aria-label="Add attachment">
+            <span class="i i--plus"></span>
+          </button>
+
+          <input
+            class="composer__input"
+            type="text"
+            placeholder="Type a message"
+          />
+
+          <div style="display:flex; gap:8px;">
+            <button class="composer__btn" aria-label="Voice note">
+              <span class="i i--mic"></span>
+            </button>
+            <button class="composer__btn send-btn" aria-label="Send">
+              <span class="i i--send"></span>
+            </button>
+          </div>
+        </div>
       </footer>
 
     </section>
   </main>
 </body>
 </html>
+
