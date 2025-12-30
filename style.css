@@ -1,5 +1,4 @@
 :root {
-  /* Light theme */
   --bg: #f7f7f8;
   --surface: #ffffff;
   --text: #0f172a;
@@ -17,7 +16,6 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* Dark theme */
     --bg: #0b1220;
     --surface: #0f172a;
     --text: #e5e7eb;
