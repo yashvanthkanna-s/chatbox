@@ -2,121 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Modern Chat UI — HTML + CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>College Chat UI</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <main class="app">
-    <section class="chat" aria-label="Modern chat UI">
-      <!-- Header -->
-      <header class="chat__header">
-        <div class="avatar" aria-hidden="true"></div>
-        <div class="chat__title">
-          <span class="chat__name">Aarav Kumar</span>
-          <span class="chat__status"><span class="status-dot"></span> Online • Typing…</span>
-        </div>
+    <section class="chat">
 
-        <div class="chat__actions" role="group" aria-label="Chat actions">
-          <button class="icon-btn" aria-label="Search">
-            <span class="i i--search" aria-hidden="true"></span>
-          </button>
-          <button class="icon-btn" aria-label="Voice call">
-            <span class="i i--phone" aria-hidden="true"></span>
-          </button>
-          <button class="icon-btn" aria-label="Video call">
-            <span class="i i--video" aria-hidden="true"></span>
-          </button>
+      <header class="chat__header">
+        <div class="avatar girl"></div>
+        <div>
+          <div class="chat__name">Ananya</div>
+          <div class="chat__status">
+            <span class="dot"></span> Online
+          </div>
         </div>
       </header>
 
-      <!-- Messages -->
       <div class="chat__body">
-        <div class="messages" role="log" aria-live="polite">
-          <div class="day-divider">Today</div>
 
-          <div class="msg msg--in">
-            <div class="msg__avatar" aria-hidden="true"></div>
-            <div class="bubble">
-              Hey! This chat UI looks slick—very Instagram/WhatsApp vibes. Want to ship it to your portfolio?
-              <div class="bubble__meta">
-                <span>10:12 AM</span>
-              </div>
-            </div>
-          </div>
+        <div class="day-divider">Today</div>
 
-          <div class="msg msg--out">
-            <div class="bubble">
-              Absolutely. Keep it pure HTML + CSS, responsive, and clean. Let’s add subtle gradients and soft shadows.
-              <div class="bubble__meta">
-                <span>10:13 AM</span>
-                <span class="seen">Seen</span>
-              </div>
-            </div>
-            <div class="msg__avatar" aria-hidden="true"></div>
-          </div>
-
-          <div class="msg msg--in">
-            <div class="msg__avatar" aria-hidden="true"></div>
-            <div class="bubble">
-              Perfect. Also include a day divider and message states—delivered/seen. No JS needed.
-              <div class="bubble__meta">
-                <span>10:14 AM</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="msg msg--out">
-            <div class="bubble">
-              Done. Dark mode via prefers-color-scheme, custom CSS icons, and accessible roles/labels.
-              <div class="bubble__meta">
-                <span>10:15 AM</span>
-                <span class="seen">Delivered</span>
-              </div>
-            </div>
-            <div class="msg__avatar" aria-hidden="true"></div>
-          </div>
-
-          <div class="msg msg--in">
-            <div class="msg__avatar" aria-hidden="true"></div>
-            <div class="bubble">
-              Ship it. I’ll test on mobile and desktop—should feel native.
-              <div class="bubble__meta">
-                <span>10:16 AM</span>
-              </div>
-            </div>
+        <div class="msg in">
+          <div class="avatar girl small"></div>
+          <div class="bubble">
+            Do you remember our first day of college? I was honestly so nervous 😅
+            <div class="time">9:10 AM</div>
           </div>
         </div>
+
+        <div class="msg out">
+          <div class="bubble">
+            <strong>Yashvanth Kanna:</strong> Same here 😂 I couldn’t even find the classroom properly.
+            <div class="time seen">9:12 AM • Seen</div>
+          </div>
+          <div class="avatar boy small"></div>
+        </div>
+
+        <div class="msg in">
+          <div class="avatar girl small"></div>
+          <div class="bubble">
+            Long lectures, short breaks, but those lunch-time talks were the best.
+            <div class="time">9:14 AM</div>
+          </div>
+        </div>
+
+        <div class="msg out">
+          <div class="bubble">
+            <strong>Yashvanth Kanna:</strong> True 💯 Canteen food, assignments, and last-minute exam prep—memorable days.
+            <div class="time delivered">9:16 AM • Delivered</div>
+          </div>
+          <div class="avatar boy small"></div>
+        </div>
+
+        <div class="msg in">
+          <div class="avatar girl small"></div>
+          <div class="bubble">
+            College life was stressful, but I’d relive it again without thinking 💙
+            <div class="time">9:18 AM</div>
+          </div>
+        </div>
+
       </div>
 
-      <!-- Composer -->
       <footer class="chat__input">
-        <div class="composer" role="form" aria-label="Message composer">
-          <button class="composer__btn" aria-label="Add attachment">
-            <span class="i i--plus" aria-hidden="true"></span>
-          </button>
-
-          <input
-            class="composer__input"
-            type="text"
-            placeholder="Message"
-            aria-label="Type a message"
-          />
-
-          <div style="display:flex; gap:8px;">
-            <button class="composer__btn" aria-label="Record voice">
-              <span class="i i--mic" aria-hidden="true"></span>
-            </button>
-            <button class="composer__btn send-btn" aria-label="Send message">
-              <span class="i i--send" aria-hidden="true"></span>
-            </button>
-          </div>
-        </div>
+        <input type="text" placeholder="Message">
+        <button>Send</button>
       </footer>
+
     </section>
   </main>
 </body>
 </html>
-
